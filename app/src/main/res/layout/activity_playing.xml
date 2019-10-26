@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <VideoView android:id="@+id/vv"
+
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/rl_mcontroler"
+        android:background="@drawable/mcontrolerbackground"
+        android:paddingHorizontal="10dp">
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/pb"
+            android:text="sdf"
+            android:clickable="true"
+            android:max="100"
+            android:layout_toRightOf="@id/tvtimecr"
+            android:layout_alignParentTop="true"
+            android:progressTint="@color/orange_light"
+            android:thumbTint="@color/orange_light"
+            android:foregroundGravity="bottom"
+            android:layout_toLeftOf="@id/tvtime_total"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/tvtimecr"
+            android:text="00:00"
+            android:textColor="@color/orange_light"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/tvtime_total"
+            android:layout_below="@id/pb"
+            android:text="00:00"
+            android:gravity="center"
+            android:textColor="@color/orange_light"
+            android:layout_alignTop="@id/tvtimecr"
+            android:layout_alignParentEnd="true"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+</layout>
